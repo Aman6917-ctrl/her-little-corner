@@ -126,9 +126,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { icon: Star, text: "Your smile lights up every room you walk into" },
-              { icon: Heart, text: "You have the kindest heart I've ever known" },
-              { icon: Coffee, text: "Every moment with you feels like home" },
-              { icon: Music, text: "Your laughter is my favorite sound" },
+              { icon: Heart, text: "You seem like someone with a really good heart. It's something I noticed quickly" },
+              { icon: Coffee, text: "You have a really positive vibe… talking to you just feels nice" },
               { icon: Smile, text: "You make even ordinary days feel magical" },
             ].map((item, index) => (
               <div

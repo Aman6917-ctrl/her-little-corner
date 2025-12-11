@@ -102,9 +102,7 @@ const Index = () => {
           </h2>
           <div className="bg-card rounded-3xl p-8 md:p-12 shadow-card animate-fade-in-up delay-200">
             <p className="text-lg md:text-xl text-foreground leading-relaxed font-light">
-              There are people who walk into your life and leave footprints on your heart forever. 
-              You are one of those rare souls whose warmth and kindness make the world a little brighter. 
-              Your smile has a way of making everything feel okay, and your laughter is the most beautiful melody.
+              I didn't expect to connect with someone this quickly, but you've got this warmth that just stays with me. I really like that about you.
             </p>
             <div className="flex items-center justify-center gap-3 mt-8 text-primary/60">
               <span className="w-8 h-px bg-primary/30" />

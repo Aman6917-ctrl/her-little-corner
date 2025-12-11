@@ -1,5 +1,7 @@
 import { Heart, Sparkles, Star, Coffee, Music, Smile } from "lucide-react";
-
+import piyu1 from "@/assets/piyu-1.jpeg";
+import piyu2 from "@/assets/piyu-2.jpeg";
+import piyu3 from "@/assets/piyu-3.jpeg";
 const Index = () => {
   return (
     <div className="min-h-screen bg-romantic-gradient">
@@ -56,22 +58,19 @@ const Index = () => {
             Every picture tells our story
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((index) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[piyu1, piyu2, piyu3].map((photo, index) => (
               <div
                 key={index}
-                className={`card-romantic bg-card rounded-2xl overflow-hidden animate-fade-in-up delay-${index}00`}
+                className={`card-romantic bg-card rounded-2xl overflow-hidden animate-fade-in-up`}
+                style={{ animationDelay: `${(index + 1) * 100}ms` }}
               >
-                <div className="aspect-[4/5] bg-gradient-to-br from-blush to-lavender flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <Heart className="w-12 h-12 text-primary/40 mx-auto mb-3" />
-                    <p className="text-muted-foreground text-sm">
-                      Photo {index}
-                    </p>
-                    <p className="text-muted-foreground/60 text-xs mt-1">
-                      Add your image URL here
-                    </p>
-                  </div>
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img 
+                    src={photo} 
+                    alt={`Piyu ${index + 1}`}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
               </div>
             ))}

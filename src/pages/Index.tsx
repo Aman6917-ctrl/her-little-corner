@@ -22,7 +22,7 @@ const Index = () => {
     <div className="min-h-screen bg-romantic-gradient">
       {/* Decorative floating elements */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-20 left-10 text-primary/30 animate-float">
+        <div className="absolute top-20 left-10 text-primary/30 animate-float icon-glow">
           <Heart className="w-8 h-8" fill="currentColor" />
         </div>
         <div className="absolute top-40 right-20 text-rose/20 animate-float delay-300">
@@ -31,7 +31,7 @@ const Index = () => {
         <div className="absolute bottom-40 left-20 text-primary/20 animate-float delay-500">
           <Star className="w-5 h-5" fill="currentColor" />
         </div>
-        <div className="absolute top-60 right-10 text-rose/25 animate-float delay-700">
+        <div className="absolute top-60 right-10 text-rose/25 animate-float delay-700 icon-glow">
           <Heart className="w-6 h-6" fill="currentColor" />
         </div>
       </div>
@@ -42,7 +42,7 @@ const Index = () => {
           <p className="text-muted-foreground text-lg mb-4 tracking-widest uppercase font-light">
             For Someone Special
           </p>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl text-foreground mb-6 leading-tight">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl text-foreground mb-6 leading-tight text-glow">
             Piyu
           </h1>
           <div className="flex items-center justify-center gap-3 text-primary">
@@ -100,7 +100,7 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl text-foreground mb-8 animate-fade-in-up delay-100">
             About You
           </h2>
-          <div className="bg-card rounded-3xl p-8 md:p-12 shadow-card animate-fade-in-up delay-200">
+          <div className="bg-card rounded-3xl p-8 md:p-12 shadow-card animate-fade-in-up delay-200 card-glow">
             <p className="text-lg md:text-xl text-foreground leading-relaxed font-light">
               I didn't expect to connect with someone this quickly, but you've got this warmth that just stays with me. I really like that about you.
             </p>
@@ -153,11 +153,11 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl text-foreground mb-8 animate-fade-in-up">
             A Final Note
           </h2>
-          <div className="bg-gradient-to-br from-blush/30 to-lavender/30 rounded-3xl p-8 md:p-12 animate-fade-in-up delay-200">
+          <div className="bg-gradient-to-br from-blush/30 to-lavender/30 rounded-3xl p-8 md:p-12 animate-fade-in-up delay-200 card-glow">
             <p className="text-xl md:text-2xl text-foreground leading-relaxed font-display">
               I'm really glad you accepted my request. The way we've connected so easily — it's not something that happens with everyone. And I won't lie, I really like talking to you.
             </p>
-            <p className="mt-8 text-2xl md:text-3xl text-rose font-display">
+            <p className="mt-8 text-2xl md:text-3xl text-rose font-display text-glow">
               Thank you for being you ♡
             </p>
           </div>

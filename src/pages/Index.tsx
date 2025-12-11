@@ -1,8 +1,23 @@
-import { Heart, Sparkles, Star, Coffee, Music, Smile } from "lucide-react";
+import { Heart, Sparkles, Star, Coffee, Music, Smile, Play, Pause } from "lucide-react";
+import { useState, useRef } from "react";
 import piyu1 from "@/assets/piyu-1.jpeg";
 import piyu2 from "@/assets/piyu-2.jpeg";
 import piyu3 from "@/assets/piyu-3.jpeg";
 const Index = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const togglePlay = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-romantic-gradient">
       {/* Decorative floating elements */}
@@ -149,6 +164,40 @@ const Index = () => {
             <p className="mt-8 text-2xl md:text-3xl text-rose font-display">
               Thank you for being you ♡
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Music Section */}
+      <section className="py-16 px-6 bg-soft-gradient">
+        <div className="max-w-md mx-auto text-center">
+          <Music className="w-10 h-10 text-primary mx-auto mb-4 animate-fade-in-up" />
+          <h2 className="text-3xl md:text-4xl text-foreground mb-6 animate-fade-in-up delay-100">
+            Our Song
+          </h2>
+          <div className="card-romantic bg-card rounded-3xl p-6 animate-fade-in-up delay-200">
+            <p className="text-muted-foreground text-sm mb-4">
+              Click play to listen
+            </p>
+            <button
+              onClick={togglePlay}
+              className="w-16 h-16 rounded-full bg-primary/20 hover:bg-primary/30 flex items-center justify-center mx-auto transition-all duration-300 hover:scale-110"
+            >
+              {isPlaying ? (
+                <Pause className="w-6 h-6 text-rose" fill="currentColor" />
+              ) : (
+                <Play className="w-6 h-6 text-rose ml-1" fill="currentColor" />
+              )}
+            </button>
+            <p className="text-muted-foreground/60 text-xs mt-4">
+              Add your song URL below
+            </p>
+            {/* Add your song URL here */}
+            <audio
+              ref={audioRef}
+              src=""
+              onEnded={() => setIsPlaying(false)}
+            />
           </div>
         </div>
       </section>

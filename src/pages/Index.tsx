@@ -26,7 +26,7 @@ const Index = () => {
             For Someone Special
           </p>
           <h1 className="text-6xl md:text-8xl lg:text-9xl text-foreground mb-6 leading-tight">
-            Her Name
+            Piyu
           </h1>
           <div className="flex items-center justify-center gap-3 text-primary">
             <span className="w-12 h-px bg-primary/50" />

@@ -189,13 +189,12 @@ const Index = () => {
                 <Play className="w-6 h-6 text-rose ml-1" fill="currentColor" />
               )}
             </button>
-            <p className="text-muted-foreground/60 text-xs mt-4">
-              Add your song URL below
+            <p className="text-muted-foreground text-sm mt-4">
+              Zaalima ♪
             </p>
-            {/* Add your song URL here */}
             <audio
               ref={audioRef}
-              src=""
+              src="/audio/zaalima.mp3"
               onEnded={() => setIsPlaying(false)}
             />
           </div>

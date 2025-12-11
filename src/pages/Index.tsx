@@ -189,9 +189,6 @@ const Index = () => {
                 <Play className="w-6 h-6 text-rose ml-1" fill="currentColor" />
               )}
             </button>
-            <p className="text-muted-foreground text-sm mt-4">
-              Zaalima ♪
-            </p>
             <audio
               ref={audioRef}
               src="/audio/zaalima.mp3"

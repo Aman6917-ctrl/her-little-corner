@@ -170,7 +170,7 @@ const Index = () => {
         <div className="max-w-md mx-auto text-center">
           <Music className="w-10 h-10 text-primary mx-auto mb-4 animate-fade-in-up" />
           <h2 className="text-3xl md:text-4xl text-foreground mb-6 animate-fade-in-up delay-100">
-            Our Song
+            For the one who makes everything better
           </h2>
           <div className="card-romantic bg-card rounded-3xl p-6 animate-fade-in-up delay-200">
             <p className="text-muted-foreground text-sm mb-4">

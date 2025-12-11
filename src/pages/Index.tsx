@@ -156,8 +156,7 @@ const Index = () => {
           </h2>
           <div className="bg-gradient-to-br from-blush/30 to-lavender/30 rounded-3xl p-8 md:p-12 animate-fade-in-up delay-200">
             <p className="text-xl md:text-2xl text-foreground leading-relaxed font-display">
-              Meeting you was like finding a missing piece I didn't know I was looking for. 
-              I'm so incredibly happy that our paths crossed, and I can't wait to see where this journey takes us.
+              I'm really glad you accepted my request. The way we've connected so easily — it's not something that happens with everyone. And I won't lie, I really like talking to you.
             </p>
             <p className="mt-8 text-2xl md:text-3xl text-rose font-display">
               Thank you for being you ♡
